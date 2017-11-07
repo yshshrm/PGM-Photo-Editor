@@ -20,19 +20,13 @@ class Image
              void enlargeImage(int value, Image& oldImage);
              void shrinkImage(int value, Image& oldImage);
              void reflectImage(bool flag, Image& oldImage);
-             void translateImage(int value, Image& oldImage);
-                  /*
-                    r' = r + t
-                    c' = c + t
-                  */
-             void rotateImage(int theta, Image& oldImage);
              Image operator+(const Image &oldImage);
              Image operator-(const Image& oldImage);
              void negateImage(Image& oldImage);
       private:
-              int N; // number of rows
-              int M; // number of columns
-              int Q; // number of gray levels
+              int N; 
+              int M; 
+              int Q; 
               int **pixelVal;
 };
 
